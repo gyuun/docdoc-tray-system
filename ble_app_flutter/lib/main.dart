@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> {
         },
       );
       if (found != null) {
-        setState(() => statusMessage = "쓰기 특성 탐색 성공 ✅ (UUID 서비스 안에서 발견)");
+        setState(() => statusMessage = "쓰기 특성 탐색 성공 (UUID 서비스 안에서 발견)");
       }
     }
 
@@ -165,7 +165,7 @@ class _HomePageState extends State<HomePage> {
       }
 
       if (found != null) {
-        setState(() => statusMessage = "쓰기 특성 탐색 성공 ✅ (Fallback에서 발견)");
+        setState(() => statusMessage = "쓰기 특성 탐색 성공 (Fallback에서 발견)");
       }
     }
 
@@ -174,7 +174,7 @@ class _HomePageState extends State<HomePage> {
 
     // 4) 그래도 못 찾았으면 실패 메시지
     if (qrChar == null) {
-      setState(() => statusMessage = "쓰기 특성 탐색 실패 ❌");
+      setState(() => statusMessage = "쓰기 특성 탐색 실패 ");
     }
   }
 
@@ -192,7 +192,7 @@ class _HomePageState extends State<HomePage> {
         await qrChar!.write(utf8.encode(code), withoutResponse: false);
         setState(() {
           lastSent = code;
-          statusMessage = "전송 완료 ✅ ($code)";
+          statusMessage = "전송 완료 ($code)";
         });
       } catch (e) {
         setState(() => statusMessage = "전송 실패: $e");
