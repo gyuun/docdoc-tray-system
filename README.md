@@ -3,6 +3,9 @@
 
 스마트 주사기 트레이 시스템. 모바일 앱(Flutter)이 QR 코드를 스캔해 **BLE**로 **Raspberry Pi Pico W (MicroPython)** 트레이에 문자열을 전송하고, 트레이는 수신한 정보를 검증하여 **디스플레이**에 표시합니다.
 
+
+[![Video Label](http://img.youtube.com/vi/TbV4OB39zzA/0.jpg)](https://youtu.be/TbV4OB39zzA)
+
 ---
 
 ## 목차
@@ -55,7 +58,7 @@ docdoc-tray-system/
    ├─ ble_advertising.py        # Advertising 페이로드 유틸
    ├─ display.py                # 디스플레이 드라이버(저수준)
    ├─ display_controller.py     # 디스플레이 컨트롤(고수준 로직)
-   ├─ gm_805s.py                # 관련 드라이버/유틸(필요 시)
-   └─ image_50_medium.bmp       # 샘플 비트맵 리소스
+   ├─ gm_805s.py                # 바코드 스캐너 드라이버/유틸
+   └─ image_50_medium.bmp       # 로고 비트맵 리소스
 ```
 
