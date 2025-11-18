@@ -1,10 +1,7 @@
 # docdoc-tray-system
-2025 PNU Medical Hackathon
+### 2025 PNU Medical Hackathon 
 
-스마트 주사기 트레이 시스템. 모바일 앱(Flutter)이 QR 코드를 스캔해 **BLE**로 **Raspberry Pi Pico W (MicroPython)** 트레이에 문자열을 전송하고, 트레이는 수신한 정보를 검증하여 **디스플레이**에 표시합니다.
-
-
-[![Video Label](http://img.youtube.com/vi/TbV4OB39zzA/0.jpg)](https://youtu.be/TbV4OB39zzA)
+- 최우수상(부산대학교 산학협력단장상)
 
 ---
 
@@ -25,10 +22,13 @@
 ---
 
 ## 개요
+스마트 주사기 트레이 시스템. 모바일 앱(Flutter)이 QR 코드를 스캔해 **BLE**로 **Raspberry Pi Pico W (MicroPython)** 트레이에 문자열을 전송하고, 트레이는 수신한 정보를 검증하여 **디스플레이**에 표시합니다.
 - **목적**: QR 인식 → BLE 전송 → 트레이 디스플레이 표시까지의 전체 플로우를 단순/신뢰성 있게 구현합니다.
 - **구성**:
   - **Flutter 앱**: 카메라로 QR 스캔 → BLE Central로 트레이 검색/연결 → 문자열 Write 전송
   - **Pico W (MicroPython)**: BLE Peripheral(GATT 서버) → 문자열 수신 → 검증 → 디스플레이 업데이트
+
+[![Video Label](http://img.youtube.com/vi/TbV4OB39zzA/0.jpg)](https://youtu.be/TbV4OB39zzA)
 
 ---
 
